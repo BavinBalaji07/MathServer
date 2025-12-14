@@ -70,8 +70,8 @@ Math.html
         </div>
     </body>
 </html>
-views.py
 
+views.py
 from django.shortcuts import render
 def eff(request):
     D = int(request.POST.get('Distance', 0))
@@ -82,8 +82,8 @@ def eff(request):
     print("Mileage=",M)
     return render(request, 'Mathapp/Math.html', {'D': D, 'V': V, 'M': M})
 
-urls.py
 
+urls.py
 from django.urls import path
 from Mathapp import views
 urlpatterns = [
